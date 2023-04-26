@@ -10,7 +10,7 @@ public class Bai1 {
 		int n;
 		BufferedReader reader;
         try {
-	    url = new java.net.URL("https://github.com/skykill111/AoHoa-DienToanDamMay/blob/main/input.txt");
+	    url = new java.net.URL("https://raw.githubusercontent.com/skykill111/AoHoa-DienToanDamMay/main/input.txt");
             java.net.URLConnection uc;
             uc = url.openConnection();	
             reader = new BufferedReader(new InputStreamReader(uc.getInputStream()));
