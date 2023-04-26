@@ -1,7 +1,7 @@
-package Bai1;
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 
 public class Bai1 {
 
@@ -10,7 +10,10 @@ public class Bai1 {
 		int n;
 		BufferedReader reader;
         try {
-            reader = new BufferedReader(new FileReader("E:\\LuuDuLieuSinhVien\\2001200266_DangTranKhoi_JAVA\\KTGK02-2001200266-DangTranKhoi\\src\\Bai1\\input.txt"));
+	    url = new java.net.URL("https://github.com/skykill111/AoHoa-DienToanDamMay/blob/main/input.txt");
+            java.net.URLConnection uc;
+            uc = url.openConnection();	
+            reader = new BufferedReader(new InputStreamReader(uc.getInputStream()));
             String line = reader.readLine();
             n = Integer.valueOf(line);
             while (line != null) {
